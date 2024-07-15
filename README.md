@@ -1,14 +1,20 @@
 Screenshot Script
+
 This script takes a screenshot after a 5-second delay and saves it to a specified directory with a unique filename based on the current timestamp.
 
 Requirements
-Python 3.x
-pyautogui library
-pathlib library
-Installation
-Install Python 3.x from python.org.
 
-Install the required libraries using pip:
+- Python 3.x
+
+- pyautogui library
+
+- pathlib library
+
+Installation
+
+- Install Python 3.x from python.org.
+
+- Install the required libraries using pip:
 
 bash
 Copy code
@@ -26,7 +32,6 @@ The script will wait for 5 seconds before taking a screenshot. This gives you ti
 The screenshot will be saved in the screenshot_data directory under your user's home directory. The filename will be a unique timestamp in milliseconds.
 
 The screenshot will also be displayed using the default image viewer.
-
 
 Notes
 Ensure that you have the necessary permissions to create directories and save files in the specified location.
