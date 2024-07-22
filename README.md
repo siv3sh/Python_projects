@@ -1,41 +1,55 @@
-Screenshot Script
+# Screenshot Script with GUI
 
-This script takes a screenshot after a 5-second delay and saves it to a specified directory with a unique filename based on the current timestamp.
+This script takes a screenshot after a 5-second delay and saves it to a specified directory with a unique filename based on the current timestamp. A graphical user interface (GUI) is provided using `tkinter` to allow users to trigger the screenshot and quit the application via buttons.
 
-Requirements
+## Requirements
 
 - Python 3.x
+- `pyautogui` library
+- `pathlib` library
+- `tkinter` (usually comes pre-installed with Python)
 
-- pyautogui library
+## Installation
 
-- pathlib library
+1. **Install Python 3.x** from [python.org](https://www.python.org/).
 
-Installation
+2. **Install the required libraries** using pip:
 
-- Install Python 3.x from python.org.
+    ```bash
+    pip install pyautogui
+    ```
 
-- Install the required libraries using pip:
+## Usage
 
-bash
-Copy code
-pip install pyautogui
-Usage
-Save the script to a file, e.g., screenshot.py.
+1. **Save the script** to a file, e.g., `screenshot_gui.py`.
 
-Run the script from the command line:
+2. **Run the script** from the command line:
 
-bash
-Copy code
-python screenshot.py
-The script will wait for 5 seconds before taking a screenshot. This gives you time to set up the screen as desired.
+    ```bash
+    python screenshot_gui.py
+    ```
 
-The screenshot will be saved in the screenshot_data directory under your user's home directory. The filename will be a unique timestamp in milliseconds.
+3. The GUI will appear with two buttons:
+   - **"Take Screenshot"**: Takes a screenshot after a 5-second delay and saves it to the `screenshot_data` directory under your user's home directory with a unique timestamp-based filename.
+   - **"Quit"**: Closes the application.
 
-The screenshot will also be displayed using the default image viewer.
+4. The screenshot will be saved in the `screenshot_data` directory and displayed using the default image viewer.
 
-Notes
-Ensure that you have the necessary permissions to create directories and save files in the specified location.
-You can change the save location by modifying the directory variable in the script.
-Troubleshooting
-If you encounter an error, ensure that all required libraries are installed and that you have the necessary permissions.
-Refer to the error message for specific details on what went wrong.
+## Configuration
+
+- **Save Location**: The screenshots are saved in the `screenshot_data` directory under your user’s home directory. You can change the save location by modifying the `directory` variable in the script.
+
+## Notes
+
+- Ensure you have the necessary permissions to create directories and save files in the specified location.
+- If the GUI does not display correctly, ensure that `tkinter` is properly installed and check for any GUI-related issues on your platform.
+
+## Troubleshooting
+
+- **Library Installation Errors**: Ensure that all required libraries (`pyautogui`, `tkinter`) are installed. Use `pip install <library>` to install any missing libraries.
+- **Permission Issues**: Ensure you have write permissions to the directory where the screenshots are being saved.
+- **Error Messages**: Refer to the error messages for specific details on what went wrong and adjust the script or environment as needed.
+
+## License
+
+This script is provided for educational purposes and personal use. Modify and distribute as needed, but ensure you comply with any relevant licenses for the libraries used.
