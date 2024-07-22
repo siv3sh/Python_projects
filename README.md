@@ -2,6 +2,7 @@
 
 This script takes a screenshot after a 5-second delay and saves it to a specified directory with a unique filename based on the current timestamp. A graphical user interface (GUI) is provided using `tkinter` to allow users to trigger the screenshot and quit the application via buttons.
 
+
 ## Requirements
 
 - Python 3.x
