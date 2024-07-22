@@ -1,6 +1,7 @@
 import time
 import pyautogui
 from pathlib import Path
+import tkinter as tk
 
 def screenshot():
     name = int(round(time.time() * 1000))
@@ -24,5 +25,22 @@ def screenshot():
         print(f'An error occurred: {e}')
 
 
-screenshot()
+root = tk.Tk()
+frame = tk.Frame(root)
+frame.pack()
 
+button = tk.Button(
+    text = "Take screenshot",
+    command = screenshot
+    )
+
+button.pack(side = tk.LEFT )
+close = tk.Button(
+    frame,
+     text = "Quit",
+    command = quit
+)
+close.pack(side = tk.LEFT)
+
+
+root.mainloop()
